@@ -4,13 +4,11 @@
 
 The **OpenAI Assistant** is a React-based web application that leverages the OpenAI API to deliver an interactive product assistant experience. This assistant helps users find products, view detailed information, filter by price, and engage in real-time conversations to get personalized recommendations.
 
-The project is built using **React, TypeScript, Express**, and other modern web technologies to ensure a responsive, dynamic, and user-friendly experience.
-
 ---
 
 ## 🌐 Live Demo
 
-You can preview the app (if deployed) here:  
+You can preview the app here:  
 [Live Demo](https://vk-workshop.github.io/ai-assistant/)
 
 ---

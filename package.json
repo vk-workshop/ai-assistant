@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "server": "nodemon server/server.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "start": "node server/server.js"
   },
   "dependencies": {
     "classnames": "^2.5.1",
