@@ -1,54 +1,102 @@
-# React + TypeScript + Vite
+# OpenAI Assistant - React & TypeScript Starter Pack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Project Overview
 
-Currently, two official plugins are available:
+The **OpenAI Assistant** is a React-based web application that leverages the OpenAI API to deliver an interactive product assistant experience. This assistant helps users find products, view detailed information, filter by price, and engage in real-time conversations to get personalized recommendations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project is built using **React, TypeScript, Express**, and other modern web technologies to ensure a responsive, dynamic, and user-friendly experience.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🌐 Live Demo
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+You can preview the app (if deployed) here:  
+[Live Demo](https://vk-workshop.github.io/ai-assistant/)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Key Features
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- 🛒 **Product Recommendations**  
+  Suggests products based on categories, preferences, or keywords provided by the user.
+
+- 🔎 **Product Search**  
+  Quickly finds products by name and provides direct links to product pages.
+
+- 📊 **Product Details**  
+  Displays comprehensive product information including price, specifications, and availability.
+
+- 💰 **Price Filtering**  
+  Lists products that match a specific price range set by the user.
+
+- 💬 **Interactive AI Chat**  
+  Users can chat directly with the assistant to ask product-related questions, filter results, or get personalized suggestions.
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend
+- **React**: For building the user interface.
+- **React Router**: For managing navigation between different pages.
+- **Context API**: For state management across components.
+- **Sass (SCSS)**: For styling and responsive design.
+- **BEM Methodology**: For structuring CSS classes in a modular and maintainable way.
+- **Mobile First**: For designing and developing with a focus on mobile devices first, then scaling up for larger screens.
+
+### Backend
+- **Express.js** - Simple API server to handle OpenAI requests
+- **OpenAI API** - Core AI functionality for recommendations and chat
+- **CORS & Dotenv** - Environment configuration and security
+
+### Tooling
+- **ESLint & Prettier** - Code quality and formatting
+- **Concurrently** - Run frontend and backend together
+- **Nodemon** - Hot reload for backend development
+
+---
+
+## ⚙️ Scripts
+
+- `npm run dev` - Starts both frontend and backend in parallel
+- `npm run server` - Starts backend only (Express)
+- `npm start` - Starts frontend only (React)
+
+---
+
+## 📦 Installation & Setup
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/vk-workshop/ai-assistant.git
+    cd openai-assistant
+    ```
+
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+
+3. Create `.env` file in `/server` folder with your OpenAI API key:
+    ```
+    OPENAI_API_KEY=your-api-key-here
+    ```
+
+4. Run the project:
+    ```bash
+    npm run dev
+    ```
+
+5. Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+## ✨ Credits
+
+Developed by **Volodymyr Kolisnichenko**  

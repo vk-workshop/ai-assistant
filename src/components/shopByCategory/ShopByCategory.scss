@@ -5,9 +5,8 @@
   margin: 50px 0;
 
   &-title {
-    @include h2;
-
     margin-bottom: 25px;
+    @include h2;
   }
 
   &-div {
@@ -25,17 +24,17 @@
   }
 
   &-bg-gold {
-    background-image: url(../../../public/img/bg-category/bg-phone-gold.svg);
+    background-image: url(/img/bg-category/bg-phone-gold.svg);
     background-color: $gold;
   }
 
   &-bg-grey {
-    background-image: url(../../../public/img/bg-category/bg-tablet-grey.svg);
+    background-image: url(/img/bg-category/bg-tablet-grey.svg);
     background-color: $grey;
   }
 
   &-bg-red {
-    background-image: url(../../../public/img/bg-category/bg-phones-red.svg);
+    background-image: url(/img/bg-category/bg-phones-red.svg);
     background-color: $deeppink;
   }
 
