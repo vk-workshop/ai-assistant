@@ -1,4 +1,4 @@
-# OpenAI Assistant - React & TypeScript Starter Pack
+# AI Assistant for E-commerce Platforms
 
 ## 📖 Project Overview
 
