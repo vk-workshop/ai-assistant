@@ -154,8 +154,8 @@
   background: $primary-gradient;
   background-size: 400% 400%;
   animation: gradientFlow 8s ease infinite;
-  mask: url(./img/logo/logo.svg) no-repeat center/contain;
-  -webkit-mask: url(./img/logo/logo.svg) no-repeat center/contain;
+  mask: url(../../../public/img/logo/logo.svg) no-repeat center/contain;
+  -webkit-mask: url(../../../public/img/logo/logo.svg) no-repeat center/contain;
   transition: all 0.3s ease;
 
   &::before {

@@ -11,18 +11,18 @@
   border: 1px solid $elements;
 
   &--minus {
-    background-image: url(img/icons/minus.svg);
+    background-image: url(../../../public/img/icons/minus.svg);
   }
 
   &--minus--active {
     cursor: pointer;
-    background-image: url(img/icons/minus-fat.svg);
+    background-image: url(../../../public/img/icons/minus-fat.svg);
 
   }
 
   &--plus {
     cursor: pointer;
-    background-image: url(img/icons/plus.svg);
+    background-image: url(../../../public/img/icons/plus.svg);
   }
 }
 
@@ -64,7 +64,7 @@
   &__delete {
     width: 30px;
     height: 30px;
-    background-image: url(img/icons/close-light.svg);
+    background-image: url(../../../public/img/icons/close-light.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-color: inherit;
@@ -73,7 +73,7 @@
     transition: background-image ease-out 0.5s;
 
     &:hover {
-      background-image: url(img/icons/close.svg);
+      background-image: url(../../../public/img/icons/close.svg);
     }
   }
 
