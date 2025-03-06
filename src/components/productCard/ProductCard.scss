@@ -54,8 +54,10 @@
   &__title {
     @include body-text;
 
-    color: $primary;
-    font-weight: 600;
+    & {
+      color: $primary;
+      font-weight: 600;
+    }
   }
 
   &__prices {
@@ -71,10 +73,12 @@
   &__full-price {
     @include h3;
 
-    font-weight: 500;
-    color: $secondary;
-    text-decoration-line: line-through;
-    text-decoration-thickness: 2px;
+    & {
+      font-weight: 500;
+      color: $secondary;
+      text-decoration-line: line-through;
+      text-decoration-thickness: 2px;
+    }
   }
 
   &__divider {
@@ -96,7 +100,9 @@
   &__spec-value {
     @include small-text;
 
-    color: $primary;
+    & {
+      color: $primary;
+    }
   }
 
   &__actions {
@@ -109,9 +115,11 @@
     @include body-text;
     @include anime-btn;
 
-    height: 40px;
-    cursor: pointer;
-    box-sizing: border-box;
+    & {
+      height: 40px;
+      cursor: pointer;
+      box-sizing: border-box;
+    }
 
     &--add,
     &--added {
@@ -143,7 +151,7 @@
       background-repeat: no-repeat;
       background-position: center;
       background-color: $white;
-      background-image: url(../../../public/img/icons/heart.svg);
+      background-image: url(img/icons/heart.svg);
 
       &:hover {
         border: none;
@@ -156,7 +164,7 @@
       background-repeat: no-repeat;
       background-position: center;
       background-color: $white;
-      background-image: url(../../../public/img/icons/heart-red.svg);
+      background-image: url(img/icons/heart-red.svg);
 
       &:hover {
         border: none;

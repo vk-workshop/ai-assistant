@@ -40,17 +40,21 @@
   &__logo{
     @include logo;
 
-    height: 32px;
-    width: 89px;
-    margin: 0;
+    & {
+      height: 32px;
+      width: 89px;
+      margin: 0;
+    }
   }
 
   &__nav-link {
     @include link;
 
-    letter-spacing: 1px;
-    height: 100%;
-    align-content: center;
+    & {
+      letter-spacing: 1px;
+      height: 100%;
+      align-content: center;
+    }
 
     @include on-tablet {
       font-weight: 600;
@@ -114,8 +118,10 @@
   &__back-top-text {
     @include small-text;
 
-    transition: color ease-out 0.5s;
-    cursor: pointer;
+    & {
+      transition: color ease-out 0.5s;
+      cursor: pointer;
+    }
 
     &:hover {
       color: $primary;

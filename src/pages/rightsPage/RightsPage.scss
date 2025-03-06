@@ -4,7 +4,9 @@
 .rights {
   @include page-adaptive;
 
-  gap: 32px;
+  & {
+    gap: 32px;
+  }
 
   &__section {
     row-gap: 32px;
@@ -24,20 +26,25 @@
   &__h2{
     @include h2;
 
-    margin-bottom: 16px;
+    & {
+      margin-bottom: 16px;
+    }
   }
   &__h3{
     @include h3;
     
-    margin-bottom: 16px;
-
+    & {
+      margin-bottom: 16px;
+    }
   }
 
   &__text {
     @include body-text;
 
-    font-weight: 500;
-    color: $primary;
-    margin-bottom: 32px;
+    & {
+      font-weight: 500;
+      color: $primary;
+      margin-bottom: 32px;
+    }
   }
 }

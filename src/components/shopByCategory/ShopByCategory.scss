@@ -24,17 +24,17 @@
   }
 
   &-bg-gold {
-    background-image: url(/img/bg-category/bg-phone-gold.svg);
+    background-image: url(img/bg-category/bg-phone-gold.svg);
     background-color: $gold;
   }
 
   &-bg-grey {
-    background-image: url(/img/bg-category/bg-tablet-grey.svg);
+    background-image: url(img/bg-category/bg-tablet-grey.svg);
     background-color: $grey;
   }
 
   &-bg-red {
-    background-image: url(/img/bg-category/bg-phones-red.svg);
+    background-image: url(img/bg-category/bg-phones-red.svg);
     background-color: $deeppink;
   }
 
@@ -59,14 +59,18 @@
   &__subtitle {
     @include mobile-h3;
 
-    margin: 0 0 4px;
-    font-weight: 600;
+    & {
+      margin: 0 0 4px;
+      font-weight: 600;
+    }
   }
 
   &__models-number {
     @include body-text;
 
-    font-weight: 600;
+    & {
+      font-weight: 600;
+    }
   }
 
   &--link {

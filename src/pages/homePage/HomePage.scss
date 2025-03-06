@@ -3,7 +3,9 @@
 .home-page {
   @include page-adaptive;
 
-  gap: 56px;
+  & {
+    gap: 56px;
+  }
 
   @include on-tablet {
     gap: 64px;

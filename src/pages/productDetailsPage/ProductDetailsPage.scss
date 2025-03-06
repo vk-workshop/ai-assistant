@@ -18,22 +18,27 @@
   &__title {
     @include h3;
 
-    font-weight: 800;
-
-    margin-bottom: 32px;
+    & {
+      font-weight: 800;
+      margin-bottom: 32px;
+    }
 
     @include on-tablet {
       @include h2;
 
-      grid-column: span 12;
-      margin-bottom: 40px;
+      & {
+        grid-column: span 12;
+        margin-bottom: 40px;
+      }
     }
 
     @include on-desktop {
       @include h2;
 
-      grid-column: span 24;
-      margin-bottom: 40px;
+      & {
+        grid-column: span 24;
+        margin-bottom: 40px;
+      }
     }
   }
 
@@ -177,8 +182,10 @@
   &__description-title {
     @include small-text;
 
-    font-weight: 600;
-    margin-bottom: 8px;
+    & {
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
   }
 
   &__id {
@@ -224,16 +231,18 @@
   &__capacity {
     @include body-text;
 
-    color: $primary;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    box-sizing: border-box;
-    height: 32px;
-    width: auto;
-    padding: 8px;
-    border: 1px solid $icons;
-    cursor: pointer;
+    & {
+      color: $primary;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      height: 32px;
+      width: auto;
+      padding: 8px;
+      border: 1px solid $icons;
+      cursor: pointer;
+    }
 
     &:hover {
       border: 1px solid $primary;
@@ -255,18 +264,22 @@
   &__price {
     @include h2;
 
-    font-weight: 800;
-    display: flex;
-    align-items: center;
-    margin-right: 8px;
+    & {
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      margin-right: 8px;
+    }
 
     &--full {
       @include h3;
 
-      font-weight: 500;
-      color: $secondary;
-      text-decoration-line: line-through;
-      text-decoration-thickness: 2px;
+      & {
+        font-weight: 500;
+        color: $secondary;
+        text-decoration-line: line-through;
+        text-decoration-thickness: 2px;
+      }
     }
   }
 
@@ -281,7 +294,9 @@
     @include body-text;
     @include anime-btn;
 
-    cursor: pointer;
+    & {
+      cursor: pointer;
+    }
 
     &--add {
       color: $white;
@@ -304,7 +319,7 @@
       background-repeat: no-repeat;
       background-position: center;
       background-color: $white;
-      background-image: url(../../../public/img/icons/heart.svg);
+      background-image: url(/img/icons/heart.svg);
 
       &:hover {
         border: none;
@@ -316,7 +331,7 @@
       background-repeat: no-repeat;
       background-position: center;
       background-color: $white;
-      background-image: url(../../../public/img/icons/heart-red.svg);
+      background-image: url(/img/icons/heart-red.svg);
 
       &:hover {
         border: none;
@@ -334,10 +349,12 @@
   &__description-group {
     @include small-text;
 
-    font-weight: 600;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    & {
+      font-weight: 600;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__description-value {
@@ -347,9 +364,11 @@
   &__small-title {
     @include mobile-h3;
 
-    padding-bottom: 16px;
-    margin-bottom: 32px;
-    border-bottom: 1px solid $elements;
+    & {
+      padding-bottom: 16px;
+      margin-bottom: 32px;
+      border-bottom: 1px solid $elements;
+    }
 
     @include on-tablet {
       @include  desktop-h3;
@@ -367,7 +386,9 @@
   &__article-title {
     @include mobile-h4;
 
-    margin-bottom: 16px;
+    & {
+      margin-bottom: 16px;
+    }
 
     @include on-tablet {
       @include desktop-h4;
@@ -377,16 +398,20 @@
   &__article-text {
     @include body-text;
 
-    font-weight: 600;
+    & {
+      font-weight: 600;
+    }
   }
 
   &__tech-group {
     @include body-text;
 
-    font-weight: 500;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    & {
+      font-weight: 500;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__tech-value {

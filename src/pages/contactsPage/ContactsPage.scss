@@ -21,13 +21,15 @@
   &__title {
     @include h1;
 
-    background-color: $green;
-    color: white;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-column: span 6;
+    & {
+      background-color: $green;
+      color: white;
+      padding: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-column: span 6;
+    }
 
     @include on-desktop-small {
       grid-column: span 12;
@@ -93,13 +95,15 @@
   &__form button {
     @include buttons;
 
-    color: $white;
-    border: none;
-    cursor: pointer;
-    height: 48px;
-    width: 100%;
-    padding: 0;
-    background: $primary;
+    & {
+      color: $white;
+      border: none;
+      cursor: pointer;
+      height: 48px;
+      width: 100%;
+      padding: 0;
+      background: $primary;
+    }
   }
 
   &__form button:hover {

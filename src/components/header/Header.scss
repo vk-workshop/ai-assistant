@@ -66,9 +66,11 @@
   &__link {
     @include link;
 
-    position: relative;
-    height: 100%;
-    align-content: center;
+    & {
+      position: relative;
+      height: 100%;
+      align-content: center;
+    }
 
     @include on-tablet {
       display: block;
@@ -104,9 +106,11 @@
   &__logo {
     @include logo;
 
-    height: 26px;
-    width: 80px;
-    margin-left: 16px;
+    & {
+      height: 26px;
+      width: 80px;
+      margin-left: 16px;
+    }
   }
 
   &__icon {
@@ -114,11 +118,11 @@
     height: 16px;
 
     &--heart {
-      background-image: url(../../../public/img/icons/heart.svg);
+      background-image: url(img/icons/heart.svg);
     }
 
     &--shopping-bag {
-      background-image: url(../../../public/img/icons/shopping_bag.svg);
+      background-image: url(img/icons/shopping_bag.svg);
     }
   }
 
@@ -145,7 +149,9 @@
   &__count__text {
     @include cart-count;
 
-    color: $white;
+    & {
+      color: $white;
+    }
   }
 
   .nav__button {
@@ -168,7 +174,7 @@
     }
 
     &--menu {
-      background-image: url(../../../public/img/icons/burger-menu.svg);
+      background-image: url(img/icons/burger-menu.svg);
     }
   }
 
@@ -210,9 +216,11 @@
     &-link {
       @include link;
 
-      padding: 16px;
-      color: $secondary;
-      position: relative;
+      & {
+        padding: 16px;
+        color: $secondary;
+        position: relative;
+      }
 
       &:hover {
         color: $primary;
