@@ -1,5 +1,5 @@
 export const makeRequest = async (message: string) => {
-  const response = await fetch('http://localhost:3002', {
+  const response = await fetch('https://openai-assistant-csvx.onrender.com', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

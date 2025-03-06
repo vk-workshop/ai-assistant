@@ -96,9 +96,6 @@ export const Assistant = () => {
             {listItems.map((item, index) => {
               const productPart = item.split(' - ')[0].trim();
               const productMatch = context.findProductByName(productPart);
-          
-              // console.log('Searching for:', productPart);
-              console.log('Found product:', productMatch);
 
               return (
                 <div key={index} className="ai-assistant__product-item">
