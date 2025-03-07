@@ -2,21 +2,22 @@
 @use '../styles/variables' as *;
 
 .breadcrumbs {
-  padding: 0 0 16px;
   @include page-adaptive;
-
+  
   & {
+    padding: 0 0 16px;
     box-sizing: border-box;
-    column-gap: 8px;
     flex-direction: row;
     margin: 0;
   }
 
   @include on-tablet {
     padding: 0 0 20px;
+    column-gap: 8px;
   }
 
   @include on-desktop {
+    column-gap: 8px;
     padding: 0 0 20px;
   }
 
@@ -84,7 +85,9 @@
     &-product {
     @include small-text;
     
-      cursor: text;
+      & {
+        cursor: text;
+      }
     }
   }
 }
