@@ -1,5 +1,4 @@
-/* eslint-disable max-len */
-/* eslint-disable @typescript-eslint/indent */
+ 
 import React, { useContext, useEffect, useMemo, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import classNames from 'classnames';
@@ -41,7 +40,7 @@ export const ProductDetailsPage: React.FC = () => {
   const categoryProduct = capitalize(arrayPath[2]);
 
   const getRandomProducts = useMemo(() => {
-    return [...allProducts].slice().sort(() => Math.random() - 0.5);
+    return allProducts.slice().sort(() => Math.random() - 0.5);
   }, [allProducts]);
 
   useEffect(() => {
@@ -259,7 +258,6 @@ export const ProductDetailsPage: React.FC = () => {
                       </p>
                     </div>
                     <div className="details__actions">
-                      {/* eslint-disable-next-line max-len, prettier/prettier */}
                       {cart.some(
                         product => product.product.itemId === detailProduct?.id,
                       ) ? (
@@ -287,7 +285,6 @@ export const ProductDetailsPage: React.FC = () => {
                           Add to cart
                         </button>
                       )}
-                      {/* eslint-disable-next-line max-len, prettier/prettier */}
                       {favorites.some(
                         item => item.itemId === detailProduct?.id,
                       ) ? (

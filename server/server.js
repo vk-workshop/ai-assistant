@@ -5,24 +5,22 @@ import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
+dotenv.config();
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const { tools } = await import('../server/helpers/tools.js');
+const PORT = process.env.PORT || 3002;
 const app = express();
 
-app.use(express.static(path.join(__dirname, '../../dist')));
 app.use(cors());
 app.use(json());
 
+app.use(express.static(path.join(__dirname, '../../dist')));
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../../dist/index.html'));
 });
-
-const { tools } = await import('../server/helpers/tools.js');
-
-const PORT = process.env.PORT || 3002;
-
-dotenv.config();
 
 const openai = new OpenAI({
   apiKey: process.env.API_KEY,

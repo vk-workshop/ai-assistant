@@ -10,8 +10,12 @@ The **OpenAI Assistant** is a React-based web application that leverages the Ope
 
 You can preview the app here:  
 [Live Demo](https://vk-workshop.github.io/ai-assistant/)
-
 ---
+
+## 🎨 Figma Design
+
+Explore the design prototype:  
+[Figma Design](https://www.figma.com/file/uEetgWenSRxk9jgiym6Yzp/Phone-catalog-redesign?node-id=1%3A2)
 
 ## 🚀 Key Features
 
@@ -92,9 +96,3 @@ You can preview the app here:
 ## 📄 License
 
 This project is open-source and available under the [MIT License](LICENSE).
-
----
-
-## ✨ Credits
-
-Developed by **Volodymyr Kolisnichenko**  
